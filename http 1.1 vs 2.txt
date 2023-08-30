@@ -1,0 +1,57 @@
+ABOUR HTTP
+
+	HTTP is a method to encode  and to transporting  information across the internet from server to client. Transfer information using some request commond are GET, POST, PUT, PATCH  and DELETE. These request are to Creat, Read, Update and Delete operation.
+	
+	GET Request:  
+		To retrive data from server. 
+	POST Request:
+		To send data to thr server.
+	PUT Request:
+		To modifies the entire data in the server at the particular 
+	PATCH Request:
+		As similar as PUT request, but it modifies the part of data only which want to update.  
+	DELETE Request:
+		To delet the data on the server in the specified location.
+
+EVOLUTION:
+	In 1989 Mr.Tim Berners-Lee give a proposal to build a hypertext system over the internet and it named as "Mesh". Later it was re-named as "World Wide Web". 
+	The first server were published at public in 1991. Later is called as " HTTP 0.9". It is an" One line protocol".At starting period protocol of HTTP were very simple
+	In 1996, "HTTP 1.0(BUILDING EXTENSIBILITY)" was introduced to solve the issues in the early version. Add some features and it got traction on a server andd abrowser. 
+	 HTTP 1.1 - STANDDARDIZED PROTOCOL PUBLISHED IN 1997. In this version files and documents were reused multiple times if the server could be connected.
+	Creating new header and methods, that improved version is named as "HTTP 2". It was published in 2015.It allow the web applications to let API to retrive  and to modifies its data without any updateon browser or server.
+	Major evolution on http is "HTTP 3 (HTTP over QUIC)" was published on 2022.It has same semantics as previous version. But here QUIC was used instead of TCP. This provide much lower latency in connection.
+
+ABOUT VERSION 1.1
+	 HTTP is a application protocol that exchanges information between a client and a local or remote web server.
+	It minimises the web traffic and faster delivery of web pages while compare with early version.
+	usage of TCP is started here. to maintain the connection persistent and it flow control resolve the temporary overloads.
+	In HTTP 1.1, browser can send  several http request to the server on a single TCP connection. 
+	
+ABOUT VERSION 2
+	HTTP 2 was designed to fix the drawbacks of HTTP 1.1
+	It is the second version of HTML protocol to make application faster and simpler.
+	It is improved version of previous HTTP version.
+	Compatibility with the methods, status codes, URIs, and header fields
+	KEY FEATURE of HTTP:
+		Commands in Binary form
+		Multiple request and respond can sent at a time.
+		Allows to exchange of successive streams at one time.
+		Server can send additional information if needed.
+		Support encrypted connections.
+
+HTTP - 1.1 Vs 2
+
+	**HTTP 1.1 It works on the textual format.
+	  HTTP 2  It works on the binary protocol.
+
+	**HTTP 1.1 Compresses data by itself.
+	  HTTP 2  HPACK used to compress data.
+
+	**HTTP 1.1 Loads one after another.if one resource were connected, all other source were blocked.
+	  HTTP 2 Able to connect various resource to send 	 multipledata by spliting data into binary code messages and numbering these messages so the client,knows which stream each binary message belongs to using singlt tcp connection.
+		
+	**HTTP 1.1 A server only serves content to a client device if the client asks for it. It uses requests resource Inlining for use getting multiple pages.
+	  HTTP 2 A server to "push" content to a client before the client asks for it. It uses PUSH frame by server that collects all multiple pages .
+
+	**HTTP 1.1  There is head of line blocking that blocks all the requests behind it until it doesn’t get its all resources.
+	  HTTP 2 It allows multiplexing so one TCP connection is required for multiple requests.
