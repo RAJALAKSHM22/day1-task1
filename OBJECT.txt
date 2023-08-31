@@ -1,0 +1,54 @@
+OBJECT
+	Object is an property that has "Key & value". Property of an object can be an primitive value, another object, and function.
+	It are an variable too, but it has many values. Values of the object are written in the form of "Key:Value".
+
+	PROPERTY OF AN OBJECT:
+		Object property is same as ordinary variable. Property defines the characterisrics of the objects, it can be access by using two methods:
+	# using dot-notation method
+		Syntex: objectName.property/key name
+		Example: let Person ={Name:"RajKumar", 
+                           Age:28,
+           		   hasHobby:true,
+          		   Hobby:"Sleeping nd Phone nondifying"}
+			 console.log( Person.Name );
+		
+	# using bracket-notation method
+		Syntex: objectName[property/key name]
+		Example: let Person ={Name:"RajKumar", 
+                           Age:28,
+           		   hasHobby:true,
+          		   Hobby:"Sleeping nd Phone nondifying"}
+			 console.log( Person[Name] );
+		
+	CREATING AN OBJECT:
+		# Using literal
+		# Using the keyword "new"
+		# Using method "Object.create()"
+
+	# Using literal
+		Define and creat an object in the single statement. It is an list consist of Key and value pair within the curly braces. 
+		Syntex:  dataType ObjectName={Key:value}
+		Key is a neme of the variable, should not be an reserved words, Value is in any data type value
+		Example: let idiot ={Name:"RajKumar", 
+                         Age:28,
+           		 hasHobby:true,
+          		 Hobby:"Sleeping nd Phone nondifying"
+			 function intro() {
+				let i=`I am ${Name}, I like to do ${Hobby}, Thank You !!`;
+			  console.log(i);
+			  }
+			}
+		
+	# Using the keyword "new"
+		Define an object constructor, and then create the constructor type object.
+		Object() is an special constructor function, used to create and initialize an object.
+		It return the variable as value which is a referance to the new object. If retuens the value "null or undefined", it creates but returns an empty object. Otherwise it returns the type of the corresponding object
+		Syntex:  dataType ObjectName= new Object();
+
+		Example: const person = new Object();
+
+	# Using method "Object.create()"
+		It is an static method to creat an new object. In this method, existing object is used as prototype to create new object.
+		Syntex: Object.create( parameters )
+
+	OBJECT is MUTABLE which means it is addressed by referance 
